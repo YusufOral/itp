@@ -13,35 +13,36 @@
 /* Ana Taşıyıcı: Görsel ve Metni Yan Yana Dizer */
 .about-container {
     display: flex;
-    flex-wrap: wrap;         /* Dar ekranlarda resmi veya yazıyı alta atar */
-    align-items: center;     /* Görselin ve metnin dikeyde tam ortalanmasını sağlar */
-    gap: 60px;               /* Metin ve görsel arasına ferah bir boşluk bırakır */
+    flex-wrap: wrap;         
+    align-items: center;    
+    gap: 60px;               
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 50px 80px;
 }
 
-/* İki Sütunu Eşit Parçalara Bölüyoruz */
+
 .about-content, .about-image {
-    flex: 1;                 /* İki tarafa da %50 genişlik verir */
-    min-width: 350px;        /* Çok daraldıklarında ezilmesinler diye sınır */
+    flex: 1;                 
+    min-width: 350px;        
 }
 
-/* --- Metin (Sol) Tarafı --- */
+
 .about-content h3 {
     font-size: 36px;
     margin-bottom: 25px;
     position: relative;
     padding-bottom: 10px;
+    display:inline-block;
 }
 
-/* Başlığın Altına Şık Bir Kısa Çizgi Ekliyoruz */
+
 .about-content h3::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 60px;
+    width: 100%;
     height: 3px;
     background-color: var(--vurgu-renk);
 }
@@ -50,29 +51,29 @@
     color: #b3b3b3;
     margin-bottom: 20px;
     font-size: 16px;
-    line-height: 1.8;        /* Okunabilirliği artırmak için satır aralığı */
+    line-height: 1.8;        
 }
 
-/* Vurgu Kutusu Tasarımı */
+
 .highlight-box {
     margin-top: 30px;
     padding: 20px;
-    background-color: rgba(205, 163, 79, 0.13); /* Altın renginin %10 saydam hali */
-    border-left: 4px solid var(--vurgu-renk);  /* Sola kalın altın çizgisi */
+    background-color: rgba(205, 163, 79, 0.13); 
+    border-left: 4px solid var(--vurgu-renk); 
     font-style: italic;
     color: #fff;
 }
 
-/* --- Görsel (Sağ) Tarafı --- */
+
 .about-image img {
-    width: 100%;             /* Resmin bulunduğu kutuyu tam kaplamasını sağlar */
-    border-radius: 10px;     /* Resmin köşelerini yuvarlatır */
-    box-shadow: 0 10px 30px rgba(0,0,0, 0.8); /* Resme derinlik (gölge) katar */
-    border: 2px solid #333;  /* Koyu gri zarif bir çerçeve */
-    transition: transform 2s ease; /* Fareyle üzerine gelinceki animasyon için */
+    width: 100%;             
+    border-radius: 10px;     
+    box-shadow: 0 10px 30px rgba(0,0,0, 0.8); 
+    border: 2px solid #333;  
+    transition: transform 2s ease; 
 }
 
 .about-image img:hover {
-    transform: scale(1.1);  /* Fareyle üzerine gelince resmi çok hafif büyütür */
-    border-color: var(--vurgu-renk); /* Çerçevesini altın rengi yapar */
+    transform: scale(1.1);  
+    border-color: var(--vurgu-renk); 
 }
