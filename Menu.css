@@ -1,0 +1,70 @@
+/* =========================================
+   MENÜ SAYFASI ÖZEL STİLLERİ
+========================================= */
+
+/* Sayfa Üst Başlık Alanı */
+.page-header {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background-color: #0a0a0a;
+}
+
+.page-header h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* Tüm Menüyü Kapsayan Ana Kutu (Flexbox Layout) */
+.menu-content {
+    padding: 40px 50px 80px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 50px;       
+    max-width: 1200px;
+    margin: 0 auto;  
+}
+
+/* Yemek Kategorileri (Sütunlar) */
+.menu-category {
+    flex: 1;          
+    min-width: 350px; 
+}
+
+.menu-category h3 {
+    font-size: 28px;
+    border-bottom: 2px solid var(--vurgu-renk); /* style.css'teki değişkeni burada da kullanabiliyoruz */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Tek Bir Yemek Kutusu */
+.menu-item {
+    margin-bottom: 30px;
+}
+
+/* İsim ve Fiyat İçin İç Düzen */
+.menu-item-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: baseline;          
+    margin-bottom: 8px;
+}
+
+.menu-item h4 {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-item .price {
+    color: var(--vurgu-renk); 
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Yemek Açıklaması */
+.menu-item p {
+    font-size: 14px;
+    color: #a0a0a0; 
+    max-width: 85%; 
+}

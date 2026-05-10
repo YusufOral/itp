@@ -1,0 +1,112 @@
+/* =========================================
+   İLETİŞİM VE REZERVASYON SAYFASI STİLLERİ
+========================================= */
+
+/* Sayfa Üst Başlık Alanı (Menüdeki ile aynı tasarımı kullanıyoruz) */
+.page-header {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background-color: #0a0a0a;
+}
+
+.page-header h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* Ana Taşıyıcı (İletişim + Form) */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;       /* Dar ekranlarda sağdaki formu alta atar */
+    gap: 60px;             /* İki sütun arası geniş boşluk */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 50px 80px;
+}
+
+/* Sol Sütun (Bilgiler) ve Sağ Sütun (Form) Eşit Genişlikte Olsun */
+.contact-info, .contact-form-area {
+    flex: 1;               /* İki kutu da ekranı yarı yarıya paylaşır */
+    min-width: 300px;      /* Çok ezilmemeleri için minimum genişlik */
+}
+
+/* --- Sol Taraf İletişim Detayları --- */
+.contact-info h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    color: #a0a0a0;
+    margin-bottom: 40px;
+}
+
+.info-item {
+    margin-bottom: 25px;
+}
+
+.info-item h4 {
+    color: var(--vurgu-renk); /* style.css'ten gelen altın rengi */
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Sağ Taraf Form Kutusu Tasarımı --- */
+.contact-form-area {
+    background-color: #1a1a1a; 
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #333;    
+}
+
+/* Form Elemanlarının Genel Düzeni (Label üstte, Input altta) */
+.form-group {
+    display: flex;
+    flex-direction: column;    
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Girdi Kutuları (Input ve Textarea) */
+.form-group input, 
+.form-group textarea {
+    background-color: #0d0d0d; 
+    border: 1px solid #444;    
+    color: #fff;               
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: border-color 0.3s; 
+}
+
+/* Kutuya Tıklanınca Çerçevesi Altın Rengi Olsun */
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;             
+    border-color: var(--vurgu-renk); 
+}
+
+/* Yan Yana Form Elemanları (Kişi Sayısı ve Tarih için İç Flexbox) */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;                   
+}
+
+/* Gönder Butonu Genişliği */
+.reservation-form .btn-primary {
+    width: 100%;               
+    border: none;
+    cursor: pointer;           
+    margin-top: 10px;
+}

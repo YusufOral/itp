@@ -1,0 +1,64 @@
+/* =========================================
+   1. GLOBAL AYARLAR VE RENKLER (Tüm sayfalar için geçerli)
+========================================= */
+:root {
+    --arkaplan-renk: #111111; 
+    --yazi-renk: #e0e0e0;     
+    --vurgu-renk: #cda34f;    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--arkaplan-renk);
+    color: var(--yazi-renk);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--vurgu-renk);
+}
+
+/* =========================================
+   2. ORTAK ALAN: ÜST MENÜ (HEADER NAVBAR)
+========================================= */
+header {
+    background-color: #000;          
+    padding: 20px 50px;              
+    border-bottom: 2px solid var(--vurgu-renk); 
+    display: flex;                   
+    justify-content: space-between;  
+    align-items: center;             
+}
+
+.logo h1 {
+    font-family: 'Cinzel', serif;  /* Sadece logoya özel lüks fontumuz */
+    font-size: 38px;               /* Fontu biraz daha büyüttük */
+    letter-spacing: 4px;           /* Harf aralığını açarak premium hissi artırdık */
+    color: var(--vurgu-renk);      /* Altın sarısı rengimizi garantiledik */
+    text-transform: uppercase;     /* Yazının her zaman büyük harfle yazılmasını sağladık */
+}
+
+.nav {
+    list-style: none; 
+    display: flex;    
+    gap: 30px;        
+}
+
+.nav li a {
+    color: var(--yazi-renk); 
+    text-decoration: none;   
+    font-size: 16px;
+    font-weight: 600;        
+    transition: color 0.3s;  
+}
+
+.nav li a:hover {
+    color: var(--vurgu-renk); 
+}
