@@ -1,5 +1,5 @@
 
-/* Sayfa Üst Başlık Alanı */
+
 .page-header {
     text-align: center;
     padding: 80px 20px 40px;
@@ -11,7 +11,7 @@
     margin-bottom: 15px;
 }
 
-/* Tüm Menüyü Kapsayan Ana Kutu (Flexbox Layout) */
+
 .menu-content {
     padding: 40px 50px 80px;
     display: flex;
@@ -21,7 +21,7 @@
     margin: 0 auto;  
 }
 
-/* Yemek Kategorileri (Sütunlar) */
+
 .menu-category {
     flex: 1;          
     min-width: 350px; 
@@ -34,12 +34,12 @@
     margin-bottom: 30px;
 }
 
-/* Yemek Kutusu */
+
 .menu-item {
     margin-bottom: 30px;
 }
 
-/* İsim ve Fiyat İçin İç Düzen */
+
 .menu-item-header {
     display: flex;
     justify-content: space-between; 
@@ -59,7 +59,7 @@
     font-size: 18px;
 }
 
-/* Yemek Açıklaması */
+
 .menu-item p {
     font-size: 14px;
     color: #a0a0a0; 

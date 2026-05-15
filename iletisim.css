@@ -1,8 +1,8 @@
 
-/* Sayfa Üst Başlık Alanı (Menüdeki ile aynı tasarımı kullanıyoruz) */
+
 .page-header {
     text-align: center;
-    padding: 80px 20px 40px;
+    padding: 50px 20px 40px;
     background-color: #0a0a0a;
 }
 
@@ -11,7 +11,7 @@
     margin-bottom: 15px;
 }
 
-/* Ana Taşıyıcı (İletişim + Form) */
+
 .contact-container {
     display: flex;
     flex-wrap: wrap;      
@@ -21,13 +21,13 @@
     padding: 20px 50px 80px;
 }
 
-/* Sol Sütun (Bilgiler) ve Sağ Sütun (Form) Eşit Genişlikte Olsun */
+
 .contact-info, .contact-form-area {
     flex: 1;               
     min-width: 300px;      
 }
 
-/* --- Sol Taraf İletişim Detayları --- */
+
 .contact-info h3 {
     font-size: 32px;
     margin-bottom: 20px;
@@ -49,7 +49,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* --- Sağ Taraf Form Kutusu Tasarımı --- */
+
 .contact-form-area {
     background-color: #1a1a1a; 
     padding: 40px;
@@ -57,7 +57,7 @@
     border: 1px solid #333;    
 }
 
-/* Form Elemanlarının Genel Düzeni (Label üstte, Input altta) */
+
 .form-group {
     display: flex;
     flex-direction: column;    
@@ -70,7 +70,7 @@
     color: #ccc;
 }
 
-/* Girdi Kutuları (Input ve Textarea) */
+
 .form-group input, 
 .form-group textarea {
     background-color: #0d0d0d; 
@@ -83,14 +83,14 @@
     transition: border-color 0.3s; 
 }
 
-/* Kutuya Tıklanınca Çerçevesi Altın Rengi Olsun */
+
 .form-group input:focus, 
 .form-group textarea:focus {
     outline: none;             
     border-color: var(--vurgu-renk); 
 }
 
-/* Yan Yana Form Elemanları (Kişi Sayısı ve Tarih için İç Flexbox) */
+
 .form-row {
     display: flex;
     gap: 20px;

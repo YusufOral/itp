@@ -1,4 +1,4 @@
-/* Sayfa Üst Başlık Alanı (Diğer sayfalarla ortak görünüm) */
+
 .page-header {
     text-align: center;
     padding: 80px 20px 40px;
@@ -7,13 +7,13 @@
 
 .page-header h2 {
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
-/* Ana Taşıyıcı: Görsel ve Metni Yan Yana Dizer */
+
 .about-container {
     display: flex;
-    flex-wrap: wrap;         
+    flex-wrap: nowrap;         
     align-items: center;    
     gap: 60px;               
     max-width: 1200px;
@@ -74,6 +74,6 @@
 }
 
 .about-image img:hover {
-    transform: scale(1.1);  
+    transform: scale(1.05);  
     border-color: var(--vurgu-renk); 
 }
