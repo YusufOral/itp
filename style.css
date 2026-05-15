@@ -25,9 +25,6 @@ h1, h2, h3 {
     color: var(--vurgu-renk);
 }
 
-/*
-    ORTAK ALAN: ÜST MENÜ (HEADER NAVBAR)
- */
 header {
     background-color: #000;          
     padding: 20px 50px;              
@@ -64,48 +61,3 @@ header {
     color: var(--vurgu-renk); 
 }
 
-/* 
-   MOBİL VE DAR EKRAN UYUMU (RESPONSIVE)
- */
-
-@media screen and (max-width: 768px) {
-    
-    /* 1. Üst Menü (Header) Düzenlemesi */
-    header {
-        flex-direction: column;
-        padding: 15px;
-        gap: 15px;
-    }
-    
-    /* Menü linkleri dar ekranda sıkışmasın diye sığmayanları alta atarız */
-    .nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    /* 2. Başlık ve Font Küçültmeleri */
-    .logo h1 {
-        font-size: 28px;
-    }
-    
-    h2 {
-        font-size: 32px !important; /* !important ile eski büyük boyutu kesin olarak eziyoruz */
-    }
-
-    /* 3. İç Boşlukları (Padding) Daraltma */
-    .features-section,
-    .menu-content,
-    .about-container,
-    .contact-container {
-        padding: 30px 20px;
-    }
-
-    /* 4. Ana Sayfa Karşılama Alanı */
-    .hero-content h2 {
-        font-size: 36px;
-    }
-    .hero-content p {
-        font-size: 16px;
-    }
-}
